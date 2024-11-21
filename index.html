@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eTicket Replica</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Estilos personalizados -->
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<!-- Navbar con campo de búsqueda -->
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand " href="#">
+            <img src="/img/logoplecabigmosaico_co.png" alt="eTicket" width="100">
+        </a>
+    <div class="container">
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="w-100">
+            <!-- Sección de búsqueda y botones (Iniciar sesión y Registrarse) -->
+            <div class="d-flex justify-content-between align-items-center mb-3">
+            <form class="d-flex w-75">
+                <input class="form-control me-2" type="search" placeholder="Buscar eventos" aria-label="Buscar">
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+
+            <ul class="navbar-nav ms-3">
+                <li class="nav-item"><a class="btn btn-outline-light" href="https://www.eticket.co/micuenta.aspx#inicio">Iniciar Sesión</a></li>
+                <li class="nav-item"><a class="btn btn-light" href="https://www.eticket.co/micuenta.aspx#registro">Registrarse</a></li>
+            </ul>
+            </div>
+
+            <!-- Sección de enlaces de navegación debajo (Conciertos, Deportes, etc.) -->
+            <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="https://www.eticket.co/eventos.aspx?categoria=1">Conciertos</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.eticket.co/eventos.aspx?categoria=3">Deportes</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.eticket.co/eventos.aspx?categoria=2">Teatro</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.eticket.co/eventos.aspx?categoria=7">Festivales</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ayuda</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </nav>
+</header>
+
+
+
+
+<!-- Carrusel de Eventos -->
+<section class="carousel py-5">
+    <div class="container">
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/img/241031150.jpg" class="d-block w-100" alt="Evento 1">
+            <div class="carousel-caption">
+              <h5>Adriatique</h5>
+              <p>3 Ene 2025 - Fenix Beach, Cartagena</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/2411081546356.jpg" class="d-block w-100" alt="Evento 2">
+          </div>
+          <div class="carousel-item active">
+            <img src="/img/24103111504798.jpg" class="d-block w-100" alt="Evento 1">
+            <div class="carousel-caption">
+              <h5>Adriatique</h5>
+              <p>3 Ene 2025 - Fenix Beach, Cartagena</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/2411130556200.jpg" class="d-block w-100" alt="Evento 2">
+          </div
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+</section>
+
+<!-- Filtros -->
+<section class="filters py-3 bg-primary">
+    <div class="container d-flex justify-content-between align-items-center">
+    <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">Todos los Eventos</button>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://www.eticket.co/eventos.aspx?categoria=1&">Conciertos</a></li>
+        <li><a class="dropdown-item" href="https://www.eticket.co/eventos.aspx?categoria=3&">Deportes</a></li>
+        </ul>
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown">Todo Colombia</button>
+        <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://www.eticket.co/eventos.aspx?idestado=15">Bogotá</a></li>
+        <li><a class="dropdown-item" href="https://www.eticket.co/eventos.aspx?idestado=31">Valle del Cauca</a></li>
+        </ul>
+    </div>
+    </div>
+</section>
+
+<!-- Baer Principal -->
+<section class="baner bg-dark text-white text-center py-5">
+    <div class="container">
+    <h1 class="display-5">   </h1><br>
+    <p>                      </p><br>
+    <p>     </p><br>
+    <br>
+<br>
+    <br>
+    <br>
+    </div>
+</section>
+<!-- Eventos Destacados -->
+
+<section class="featured-events py-5">
+    <div class="container">
+    <h2 class="text-center mb-4">Eventos en tu Ciudad</h2>
+    <div class="row row-cols-1 row-cols-md-4 g-4"> 
+        <div class="col"> 
+        <div class="card">
+            <img src="/img/tarje1.jpg" class="card-img-top" alt="Evento 3" style="object-fit: cover; height: 200px;">
+            <div class="card-body text-center">
+            <h5 class="card-title">Duo Marger</h5>
+            <p class="card-text">Bogotá</p>
+            <a href="https://www.eticket.co/eventos.aspx?idartista=810" class="btn btn-primary">Ver Eventos</a>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="/img/tarlet2.jpg" class="card-img-top" alt="Evento 3" style="object-fit: cover; height: 200px;">
+            <div class="card-body text-center">
+            <h5 class="card-title">JAISON NEUTRA</h5>
+            <p class="card-text">Bogotá</p>
+            <a href="https://www.eticket.co/eventos.aspx?idartista=773" class="btn btn-primary">Ver Eventos</a>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="/img/tarje3.jpg" class="card-img-top" alt="Evento 3" style="object-fit: cover; height: 200px;">
+            <div class="card-body text-center">
+            <h5 class="card-title">BRESH</h5>
+            <p class="card-text">Bogotá</p>
+            <a href="https://www.eticket.co/eventos.aspx?idartista=707" class="btn btn-primary">Ver Eventos</a>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card">
+            <img src="/img/tarje4.png" class="card-img-top" alt="Evento 3" style="object-fit: cover; height: 200px;">
+            <div class="card-body text-center">
+            <h5 class="card-title">V FOR VOLUME</h5>
+            <p class="card-text">Bogotá</p>
+            <a href="https://www.eticket.co/eventos.aspx?idartista=792" class="btn btn-primary">Ver Eventos</a>
+            </div>
+        </div>
+        </div>
+        <!-- Añadir más tarjetas según sea necesario -->
+    </div>
+    </div>
+</section>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
